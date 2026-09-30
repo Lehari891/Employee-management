@@ -1,0 +1,116 @@
+<mvc:View controllerName="employeemanagement.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Table
+    id="idProductsTable"
+    inset="false"
+    items="{
+        path: '/Employees',
+        sorter: {
+            path: 'EmployeeID'
+        }
+    }">
+
+    <headerToolbar>
+        <OverflowToolbar id="_IDGenOverflowToolbar1">
+            <Title id="_IDGenTitle" text="Employees" level="H2"/>
+            <ToolbarSpacer id="_IDGenToolbarSpacer"/>
+            <Button id="_IDGenButton"
+            icon="sap-icon://refresh"
+            tooltip="Refresh"
+            press=".onRefresh"
+/>
+
+            <SearchField id="_IDGenSearchField"
+                width="20rem"
+                placeholder="Search employee"
+                search=".onSearch"/>
+
+        </OverflowToolbar>
+    </headerToolbar>
+
+    <columns>
+
+        <Column id="_IDGenColumn" width="6rem">
+            <Text id="_IDGenText" text="Employee ID"/>
+        </Column>
+
+        <Column id="_IDGenColumn1" width="12rem">
+            <Text id="_IDGenText1" text="First Name"/>
+        </Column>
+
+        <Column id="_IDGenColumn2" width="12rem">
+            <Text id="_IDGenText2" text="Last Name"/>
+        </Column>
+
+        <Column id="_IDGenColumn3"
+            minScreenWidth="Tablet"
+            demandPopin="true">
+            <Text id="_IDGenText3" text="Title"/>
+        </Column>
+
+        <Column id="_IDGenColumn4"
+            minScreenWidth="Tablet"
+            demandPopin="true">
+            <Text id="_IDGenText4" text="City"/>
+        </Column>
+
+        <Column id="_IDGenColumn5"
+            minScreenWidth="Desktop"
+            demandPopin="true">
+            <Text id="_IDGenText5" text="Country"/>
+        </Column>
+
+        <Column id="_IDGenColumn6"
+            minScreenWidth="Desktop"
+            demandPopin="true">
+            <Text id="_IDGenText6" text="Hire Date"/>
+        </Column>
+
+        <Column id="_IDGenColumn7"
+            minScreenWidth="Desktop"
+            demandPopin="true">
+            <Text id="_IDGenText7" text="Phone"/>
+        </Column>
+
+    </columns>
+
+    <items>
+        <ColumnListItem id="_IDGenColumnListItem"
+            type="Navigation"
+            press=".onEmployeePress">
+
+            <cells>
+
+                <ObjectIdentifier id="_IDGenObjectIdentifier"
+                    title="{EmployeeID}"/>
+
+                <Text id="_IDGenText8" text="{FirstName}"/>
+
+                <Text id="_IDGenText9" text="{LastName}"/>
+
+                <Text id="_IDGenText10" text="{Title}"/>
+
+                <Text id="_IDGenText11" text="{City}"/>
+
+                <Text id="_IDGenText12" text="{Country}"/>
+
+                <Text id="_IDGenText13" text="{
+                    path: 'HireDate',
+                    type: 'sap.ui.model.type.Date',
+                    formatOptions: {
+                        style: 'medium'
+                    }
+                }"/>
+
+                <Text id="_IDGenText14" text="{HomePhone}"/>
+
+            </cells>
+
+        </ColumnListItem>
+    </items>
+
+</Table>
+    </Page>
+</mvc:View>

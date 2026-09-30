@@ -1,0 +1,116 @@
+<mvc:View
+    controllerName="employeemanagement.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt">
+
+    <tnt:ToolPage id="toolPage">
+
+        <!-- TOP HEADER -->
+        <tnt:header>
+            <tnt:ToolHeader id="_IDGenToolHeader1">
+
+                <Button id="_IDGenButton3"
+                   
+                    icon="sap-icon://menu2"
+                    type="Transparent"
+                    tooltip="Collapse/Expand Menu"
+                    press=".onCollapseExpandPress"/>
+
+                <Title id="_IDGenTitle1"
+                    text="Employee Management"
+                    level="H2"/>
+
+                <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+
+                <Button id="_IDGenButton2"
+                    icon="sap-icon://bell"
+                    type="Transparent"
+                    tooltip="Notifications"/>
+
+                <Avatar id="_IDGenAvatar"
+                    initials="EM"
+                    displaySize="XS"/>
+
+            </tnt:ToolHeader>
+        </tnt:header>
+
+
+        <!-- LEFT SIDE NAVIGATION -->
+        <tnt:sideContent>
+
+            <tnt:SideNavigation id="_IDGenSideNavigation"
+                
+                expanded="true"
+                selectedKey="employees"
+                itemSelect=".onItemSelect">
+
+                <tnt:item>
+
+                    <tnt:NavigationList id="_IDGenNavigationList2">
+
+                        <tnt:NavigationListItem id="_IDGenNavigationListItem7"
+                            key="dashboard"
+                            text="Dashboard"
+                            icon="sap-icon://home"/>
+
+                        <tnt:NavigationListItem id="_IDGenNavigationListItem8"
+                            key="employees"
+                            text="Employees"
+                            icon="sap-icon://employee"/>
+
+                        <tnt:NavigationListItem id="_IDGenNavigationListItem9"
+                            key="departments"
+                            text="Departments"
+                            icon="sap-icon://org-chart"/>
+
+                        <tnt:NavigationListItem id="_IDGenNavigationListItem10"
+                            key="projects"
+                            text="Projects"
+                            icon="sap-icon://business-objects-experience"/>
+
+                        <tnt:NavigationListItem id="_IDGenNavigationListItem11"
+                            key="payroll"
+                            text="Payroll"
+                            icon="sap-icon://money-bills"/>
+
+                        <tnt:NavigationListItem id="_IDGenNavigationListItem12"
+                            key="reports"
+                            text="Reports"
+                            icon="sap-icon://bar-chart"/>
+
+                    </tnt:NavigationList>
+
+                </tnt:item>
+
+
+                <!-- PERMANENT BOTTOM ITEMS -->
+                <tnt:fixedItem>
+
+                    <tnt:NavigationList id="_IDGenNavigationList3">
+
+                        <tnt:NavigationListItem id="_IDGenNavigationListItem13"
+                            key="settings"
+                            text="Settings"
+                            icon="sap-icon://action-settings"/>
+
+                    </tnt:NavigationList>
+
+                </tnt:fixedItem>
+
+            </tnt:SideNavigation>
+
+        </tnt:sideContent>
+
+
+        <!-- RIGHT SIDE CONTENT -->
+        <tnt:mainContents>
+
+            <NavContainer
+                id="contentContainer"/>
+
+        </tnt:mainContents>
+
+    </tnt:ToolPage>
+
+</mvc:View>
