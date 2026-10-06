@@ -1,0 +1,101 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="addEmployeeDialog"
+        title="Add Employee"
+        contentWidth="28rem">
+
+        <content>
+
+            <VBox id="_IDGenVBox3"
+                width="100%"
+                class="sapUiSmallMargin">
+
+                <!-- Employee ID -->
+                <Label id="_IDGenLabel4"
+                    text="Employee ID"
+                    labelFor="employeeID" />
+
+                <Input
+                    id="employeeID"
+                    width="100%"
+                    placeholder="Enter employee ID"
+                    class="sapUiTinyMarginBottom" />
+
+
+                <!-- First Name -->
+                <Label id="_IDGenLabel5"
+                    text="First Name"
+                    labelFor="employeeFirstName" />
+
+                <Input
+                    id="employeeFirstName"
+                    width="100%"
+                    placeholder="Enter first name"
+                    class="sapUiTinyMarginBottom" />
+
+
+                <!-- Last Name -->
+                <Label id="_IDGenLabel6"
+                    text="Last Name"
+                    labelFor="employeeLastName" />
+
+                <Input
+                    id="employeeLastName"
+                    width="100%"
+                    placeholder="Enter last name"
+                    class="sapUiTinyMarginBottom" />
+
+
+                <!-- Job Title -->
+                <Label id="_IDGenLabel7"
+                    text="Job Title"
+                    labelFor="employeeTitle" />
+
+                <Input
+                    id="employeeTitle"
+                    width="100%"
+                    placeholder="Enter job title"
+                    class="sapUiTinyMarginBottom" />
+
+
+                <!-- Hire Date -->
+                <Label id="_IDGenLabel8"
+                    text="Hire Date"
+                    labelFor="employeeHireDate" />
+
+                <DatePicker
+                    id="employeeHireDate"
+                    width="100%"
+                    placeholder="Select hire date"
+                    valueFormat="yyyy-MM-dd"
+                    displayFormat="dd/MM/yyyy" />
+
+            </VBox>
+
+        </content>
+
+
+        <beginButton>
+
+            <Button id="_IDGenButton6"
+                text="Add"
+                type="Emphasized"
+                press=".onSaveEmployee" />
+
+        </beginButton>
+
+
+        <endButton>
+
+            <Button id="_IDGenButton7"
+                text="Cancel"
+                press=".onCancelEmployee" />
+
+        </endButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>

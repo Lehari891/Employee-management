@@ -1,7 +1,7 @@
 <mvc:View controllerName="employeemanagement.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page" >
     <Table
     id="idProductsTable"
     inset="false"

@@ -8,8 +8,22 @@ sap.ui.define([
     return Controller.extend("employeemanagement.controller.View1", {
 
         onInit: function () {
-
+            
         },
+        onEmployeePress: function (oEvent) {
+            
+
+    var oContext = oEvent.getSource().getBindingContext();
+
+    var sEmployeeID = oContext.getProperty("EmployeeID");
+
+    this.getOwnerComponent()
+        .getRouter()
+        .navTo("RouteView2", {
+            EmployeeID: sEmployeeID
+        });
+},
+        
 
         onSearch: function (oEvent) {
             var aFilters = [];

@@ -24,6 +24,16 @@ sap.ui.define([
             .getRouter()
             .navTo("RouteView1");
     }
+    if (sKey === "dashboard") {
+        this.getOwnerComponent()
+            .getRouter()
+            .navTo("RouteDashboard");
+    }
+    if (sKey === "departments") {
+        this.getOwnerComponent()
+            .getRouter()
+            .navTo("RouteDepartment");
+    }
 
 }
 

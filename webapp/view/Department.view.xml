@@ -1,0 +1,35 @@
+<mvc:View
+    controllerName="employeemanagement.controller.Department"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form">
+
+    <Page id="_IDGenPage" title="Departments">
+
+        <content>
+
+           <GenericTile id="_IDGenGenericTile4"
+    header="Sales"
+   
+    class="sapUiSmallMargin"/>
+
+<GenericTile id="_IDGenGenericTile5"
+    header="Human Resources"
+    
+    class="sapUiSmallMargin"/>
+
+<GenericTile id="_IDGenGenericTile6"
+    header="Finance"
+   
+    class="sapUiSmallMargin"/>
+
+<GenericTile id="_IDGenGenericTile7"
+    header="IT"
+   
+    class="sapUiSmallMargin"/>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

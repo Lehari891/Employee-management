@@ -1,1 +1,142 @@
-/* Enter your custom styles here */
+/* Entire dashboard */
+.dashboardPage {
+    background: #f5f7f9 !important;
+}
+
+.dashboardContainer {
+    padding: 2rem 2.5rem;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   WELCOME BANNER
+   ========================= */
+
+.welcomeBanner {
+    min-height: 250px;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #eaf4ff 0%,
+        #dceeff 50%,
+        #c8e4fa 100%
+    );
+
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* Left side */
+
+.welcomeContent {
+    z-index: 2;
+}
+
+.greetingTitle {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #1d2d3e !important;
+}
+
+.welcomeText {
+    font-size: 1.1rem !important;
+    color: #475e75 !important;
+    margin-top: 0.4rem;
+}
+
+
+/* Date / Time */
+
+.dateTimeContainer {
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.dateContainer,
+.timeContainer {
+    gap: 0.6rem;
+}
+
+.dashboardIcon {
+    color: #0a6ed1;
+    font-size: 1.1rem;
+}
+
+.dashboardDate {
+    font-size: 1rem;
+    color: #354a5f;
+}
+
+.dashboardTime {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1d2d3e;
+}
+
+
+/* =========================
+   IMAGE
+   ========================= */
+
+.dashboardImageContainer {
+    height: 250px;
+}
+
+.dashboardImage {
+    width: 100%;
+    max-width: 380px;
+    max-height: 230px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   DASHBOARD SECTIONS
+   ========================= */
+
+.dashboardSection {
+    margin-top: 2rem;
+}
+
+.sectionTitle {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    color: #1d2d3e !important;
+
+    margin-bottom: 1rem !important;
+}
+
+
+/* =========================
+   QUICK ACTIONS
+   ========================= */
+
+.quickActions {
+    gap: 1rem;
+}
+
+.actionTile {
+    margin-right: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+
+/* =========================
+   RECENT EMPLOYEES
+   ========================= */
+
+.employeeTable {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.recentEmployeesSection {
+    margin-bottom: 2rem;
+}

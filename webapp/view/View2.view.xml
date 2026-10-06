@@ -1,5 +1,120 @@
-<mvc:View controllerName="employeemanagement.controller.View2"
+<mvc:View
+    controllerName="employeemanagement.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:uxap="sap.uxap"
+    xmlns:forms="sap.ui.layout.form"
     xmlns="sap.m">
 
-    </mvc:View>
+    <Page id="_IDGenPage2"
+        title="Employee Details"
+        showNavButton="true"
+        navButtonPress="onNavBack">
+
+        <uxap:ObjectPageLayout id="_IDGenObjectPageLayout"
+            showTitleInHeaderContent="true"
+            useIconTabBar="true">
+
+            <uxap:headerTitle>
+                <uxap:ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle">
+
+                    <uxap:expandedHeading>
+                        <Title id="_IDGenTitle5" text="{FirstName} {LastName}" />
+                    </uxap:expandedHeading>
+
+                    <uxap:snappedHeading>
+                        <Title id="_IDGenTitle6" text="{FirstName} {LastName}" />
+                    </uxap:snappedHeading>
+
+                    <uxap:expandedContent>
+                        <Text id="_IDGenText23" text="{Title}" />
+                    </uxap:expandedContent>
+
+                    <uxap:actions>
+                        <Button id="_IDGenButton1"
+                            text="Edit"
+                            icon="sap-icon://edit"
+                            type="Emphasized"
+                            press="onEditEmployee"/>
+
+                        <Button id="_IDGenButton4"
+                            text="Delete"
+                            icon="sap-icon://delete"
+                            type="Reject"
+                            press="onDeleteEmployee"/>
+                    </uxap:actions>
+
+                </uxap:ObjectPageDynamicHeaderTitle>
+            </uxap:headerTitle>
+
+            <uxap:sections>
+
+                <uxap:ObjectPageSection id="_IDGenObjectPageSection" title="Employee Information">
+
+                    <uxap:subSections>
+
+                        <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection">
+
+                            <uxap:blocks>
+
+                                <forms:SimpleForm id="_IDGenSimpleForm"
+                                    editable="false">
+
+                                    <Label id="_IDGenLabel" text="Employee ID"/>
+                                    <Text id="_IDGenText24" text="{EmployeeID}"/>
+
+                                    <Label id="_IDGenLabel1" text="First Name"/>
+                                    <Text id="_IDGenText25" text="{FirstName}"/>
+
+                                    <Label id="_IDGenLabel2" text="Last Name"/>
+                                    <Text id="_IDGenText26" text="{LastName}"/>
+
+                                    <Label id="_IDGenLabel3" text="Title"/>
+                                    <Text id="_IDGenText27" text="{Title}"/>
+
+                                </forms:SimpleForm>
+
+                            </uxap:blocks>
+
+                        </uxap:ObjectPageSubSection>
+
+                    </uxap:subSections>
+
+                </uxap:ObjectPageSection>
+
+                <uxap:ObjectPageSection id="_IDGenObjectPageSection1" title="Address Details">
+
+                    <uxap:subSections>
+
+                        <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection1">
+
+                            <uxap:blocks>
+
+                                <forms:SimpleForm id="_IDGenSimpleForm1"
+                                    editable="false">
+
+                                    <Label id="_IDGenLabel9" text="City"/>
+                                    <Text id="_IDGenText28" text="{City}"/>
+
+                                    <Label id="_IDGenLabel10" text="Region"/>
+                                    <Text id="_IDGenText29" text="{Region}"/>
+
+                                    <Label id="_IDGenLabel11" text="Country"/>
+                                    <Text id="_IDGenText30" text="{Country}"/>
+
+                                </forms:SimpleForm>
+
+                            </uxap:blocks>
+
+                        </uxap:ObjectPageSubSection>
+
+                    </uxap:subSections>
+
+                </uxap:ObjectPageSection>
+
+            </uxap:sections>
+
+        </uxap:ObjectPageLayout>
+
+    </Page>
+
+</mvc:View>
