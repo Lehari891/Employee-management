@@ -89,7 +89,7 @@
 
                             <uxap:blocks>
 
-                                <forms:SimpleForm id="_IDGenSimpleForm1"
+                                <forms:SimpleForm id="_IDGenSimpleForm1" 
                                     editable="false">
 
                                     <Label id="_IDGenLabel9" text="City"/>
