@@ -8,8 +8,11 @@
 
         <content>
 
-           <GenericTile id="_IDGenGenericTile4"
+        <GenericTile id="_IDGenGenericTile4"
     header="Sales"
+   
+	press=".onsales"
+
    
     class="sapUiSmallMargin"/>
 

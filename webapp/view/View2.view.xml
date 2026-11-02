@@ -10,7 +10,7 @@
         showNavButton="true"
         navButtonPress="onNavBack">
 
-        <uxap:ObjectPageLayout id="_IDGenObjectPageLayout"
+        <uxap:ObjectPageLayout id="_IDGenObjectPageLayout" 
             showTitleInHeaderContent="true"
             useIconTabBar="true">
 

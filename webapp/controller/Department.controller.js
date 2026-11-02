@@ -7,6 +7,9 @@ sap.ui.define([
 
         onInit: function () {
 
+        },
+        onsales: function (oEvent) {
+
         }
 
     });
